@@ -3404,3 +3404,17 @@ input, select, textarea {
 		html[data-theme="dark"] button.theme-toggle .icon {
 			color: #f0d78c;
 		}
+
+/* About: the stack card is a list, not a figure */
+
+	#about .fact-card .fact-value.fact-value-text {
+		font-size: 0.8em;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		line-height: 1.6;
+	}
+
+	.nowrap {
+		white-space: nowrap;
+	}
