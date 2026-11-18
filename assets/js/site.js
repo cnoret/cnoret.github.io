@@ -44,8 +44,8 @@
 
 		'certs.title': 'Formation et certifications',
 		'certs.degrees': 'Diplômes',
-		'certs.d1': 'Titre RNCP niveau 7 (Bac+5) – AI Architect (Jedha, 2025)',
-		'certs.d2': 'Titre RNCP niveau 6 (Bac+3/4) – Data Science Developer (Jedha, 2025)',
+		'certs.d1': 'Titre RNCP niveau 7 (Bac+5) – Architecte en Intelligence Artificielle (Jedha, 2025)',
+		'certs.d2': 'Titre RNCP niveau 6 (Bac+3/4) – Concepteur-développeur en science des données (Jedha, 2025)',
 		'certs.d3': 'Data Analyst (DataScientest, co-certifié par MINES Paris – PSL, 2023)',
 		'certs.online': 'Certificats en ligne',
 
