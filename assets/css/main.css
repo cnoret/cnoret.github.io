@@ -3514,3 +3514,29 @@ input, select, textarea {
 		html[lang="fr"] #top .hero-copy h2 {
 			white-space: normal;
 		}
+
+/* Toggles: center the icon and the FR/EN label optically */
+
+	button.theme-toggle {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+		button.theme-toggle .icon:before {
+			display: block;
+			line-height: 1;
+		}
+
+		button.theme-toggle .lang-label {
+			line-height: 1;
+			padding-left: 0.06em;
+		}
+
+		button.theme-toggle .lang-label {
+			position: relative;
+			top: -0.06em;
+		}
