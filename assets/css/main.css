@@ -3434,3 +3434,54 @@ input, select, textarea {
 		html[data-theme="dark"] #top .hero-visual img.hero-quad:hover {
 			filter: drop-shadow(0 0.6em 1.1em rgba(0, 0, 0, 0.5));
 		}
+
+/* Light theme contrast (WCAG AA) */
+
+	/* Darker teal for small text; large text keeps the brand teal */
+
+		#portfolio .item .item-links a,
+		#about .about-copy .about-certs .cert-group h4,
+		#about .fact-card .fact-value.fact-value-text {
+			color: #00707f;
+		}
+
+			#portfolio .item .item-links a {
+				border-color: #00707f;
+			}
+
+	/* Footer */
+
+		#footer {
+			color: #4f5a5e;
+		}
+
+			#footer a {
+				color: #005f6b;
+			}
+
+	/* Sidebar icons and secondary text */
+
+		#nav ul li a span:before,
+		#header .icons a {
+			color: rgba(255, 255, 255, 0.55);
+		}
+
+			#header .icons a:hover {
+				color: #fff;
+			}
+
+		#nav ul li a.active span:before {
+			color: #4fc6d6;
+		}
+
+/* Section titles: same weight as the hero */
+
+	#main > section > .container > header h2 {
+		color: #0B1F2A;
+		font-weight: 600;
+		letter-spacing: -0.5px;
+	}
+
+	html[data-theme="dark"] #main > section > .container > header h2 {
+		color: #eef3f5;
+	}
