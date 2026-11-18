@@ -37,7 +37,7 @@
 		'p4.alt': 'Détection de spam SMS',
 
 		'about.title': 'À propos',
-		'about.p1': 'Après 8 ans dans le commerce à suivre les ventes et les KPI, j’ai choisi la data.',
+		'about.p1': 'Après 8 ans en retail à suivre les ventes et les KPI, j’ai choisi la data.',
 		'about.p2': 'Aujourd’hui je suis Teaching Assistant data en freelance chez Jedha AI School : j’accompagne les apprenants en SQL, Python et machine learning.',
 		'about.p3': 'J’aime construire des pipelines complets et en faire des outils que les gens utilisent vraiment.',
 		'about.github': 'Voir mon GitHub',
@@ -49,7 +49,7 @@
 		'certs.d3': 'Data Analyst (DataScientest, co-certifié par MINES Paris – PSL, 2023)',
 		'certs.online': 'Certificats en ligne',
 
-		'fact.retail': 'ans dans le commerce',
+		'fact.retail': 'ans d’expérience métier en retail',
 		'fact.cohorts': 'promotions Jedha accompagnées',
 		'fact.stack': 'Stack principale',
 
