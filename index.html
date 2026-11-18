@@ -18,9 +18,24 @@
 		<meta property="og:image" content="https://cnoret.github.io/images/projects/getaround.png" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<link rel="icon" type="image/png" href="images/favicon.png" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="color-scheme" content="light dark" />
+		<!-- The site has its own dark theme: tell Dark Reader not to generate one -->
+		<meta name="darkreader-lock" />
+		<script>
+			(function() {
+				var theme;
+				try { theme = localStorage.getItem('theme'); } catch (e) {}
+				if (theme !== 'light' && theme !== 'dark')
+					theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.setAttribute('data-theme', theme);
+			})();
+		</script>
+		<link rel="stylesheet" href="assets/css/main.css?v=2" />
 	</head>
 	<body class="is-preload">
+
+		<!-- Theme toggle -->
+			<button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="icon solid fa-moon" aria-hidden="true"></span></button>
 
 		<!-- Header -->
 			<div id="header">
@@ -271,6 +286,31 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				(function() {
+					var root = document.documentElement,
+						button = document.getElementById('theme-toggle'),
+						icon = button.querySelector('.icon');
+
+					function render() {
+						var dark = root.getAttribute('data-theme') === 'dark',
+							label = dark ? 'Switch to light mode' : 'Switch to dark mode';
+						icon.classList.toggle('fa-sun', dark);
+						icon.classList.toggle('fa-moon', !dark);
+						button.setAttribute('aria-label', label);
+						button.setAttribute('title', label);
+					}
+
+					button.addEventListener('click', function() {
+						var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+						root.setAttribute('data-theme', next);
+						try { localStorage.setItem('theme', next); } catch (e) {}
+						render();
+					});
+
+					render();
+				})();
+			</script>
 
 	</body>
 </html>
