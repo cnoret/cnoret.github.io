@@ -9,14 +9,14 @@
 	var root = document.documentElement;
 
 	var FR = {
-		'meta.description': "Christophe Noret, Data Analyst et Analytics Engineer entre Angers et Nantes. Projets data de bout en bout : KPI, prévisions, tableaux de bord.",
+		'meta.description': "Christophe Noret · Data Analyst et Analytics Engineer à Angers / Nantes. Projets data de bout en bout : KPI, prévisions, tableaux de bord.",
 
 		'nav.intro': 'Accueil',
 		'nav.about': 'À propos',
 		'social.email': 'E-mail',
 
 		'hero.title': 'Bonjour, je suis Christophe.',
-		'hero.text': 'Je conçois des projets data de bout en bout, de la donnée brute aux KPI et aux tableaux de bord. Entre Angers et Nantes, disponible aussi en télétravail.',
+		'hero.text': 'Je conçois des projets data de bout en bout : de la donnée brute jusqu’aux KPI et aux tableaux de bord. Angers / Nantes, télétravail possible.',
 		'hero.cta': 'Voir les projets',
 		'hero.alt': 'Quatre tableaux de bord de projets : ventes retail, tarification de location de voitures, consommation électrique en France et détection de spam SMS',
 
@@ -24,21 +24,21 @@
 		'link.demo': 'Démo',
 
 		'p1.title': 'Analyse des ventes retail',
-		'p1.desc': 'Analyse des ventes hebdomadaires de 45 magasins Walmart : KPI, saisonnalité et prévision des ventes (R² 0,96), restituée dans un tableau de bord interactif.',
+		'p1.desc': 'Analyse des ventes hebdomadaires de 45 magasins Walmart : KPI, saisonnalité et prévisions (R² 0,96) dans un tableau de bord interactif.',
 		'p1.alt': 'Analyse des ventes retail',
 		'p2.title': 'Tarification de location de voitures (Getaround)',
-		'p2.desc': 'Prédiction du prix de location servie via une API et un tableau de bord, avec suivi MLflow, tests et CI. MAE 10,68&nbsp;€, R² 0,73.',
+		'p2.desc': 'Prédiction du prix de location exposée via une API et un tableau de bord, avec suivi MLflow, tests et CI. MAE 10,68&nbsp;€ · R² 0,73.',
 		'p2.alt': 'Tarification de location de voitures (Getaround)',
 		'p3.title': 'Analyse énergétique en France (Hexa Watts)',
-		'p3.desc': 'Analyse et prévision de la consommation d’électricité dans les régions françaises, à partir de la date, de l’heure et de la température, dans une application interactive.',
+		'p3.desc': 'Application interactive qui analyse et prévoit la consommation électrique des régions françaises selon la date, l’heure et la température.',
 		'p3.alt': 'Analyse énergétique en France (Hexa Watts)',
 		'p4.title': 'Détection de spam SMS',
-		'p4.desc': 'Classifieur à base de réseau de neurones qui repère les SMS indésirables en temps réel, entraîné sur un jeu de données déséquilibré. Spam : précision 0,87, rappel 0,92, accuracy 0,97.',
+		'p4.desc': 'Réseau de neurones qui détecte les spams SMS en temps réel, entraîné sur un jeu de données déséquilibré. Spam : précision 0,87 · rappel 0,92 · accuracy 0,97.',
 		'p4.alt': 'Détection de spam SMS',
 
 		'about.title': 'À propos',
-		'about.p1': 'Après 8 ans dans le commerce, à suivre les ventes et les KPI commerciaux, j’ai fait le choix de la data.',
-		'about.p2': 'Aujourd’hui, je suis Teaching Assistant data en freelance chez Jedha AI School : j’accompagne les apprenants en SQL, Python et machine learning.',
+		'about.p1': 'Après 8 ans dans le commerce à suivre les ventes et les KPI, j’ai choisi la data.',
+		'about.p2': 'Aujourd’hui je suis Teaching Assistant data en freelance chez Jedha AI School : j’accompagne les apprenants en SQL, Python et machine learning.',
 		'about.p3': 'J’aime construire des pipelines complets et en faire des outils que les gens utilisent vraiment.',
 		'about.github': 'Voir mon GitHub',
 
