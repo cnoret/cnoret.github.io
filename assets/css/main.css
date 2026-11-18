@@ -3371,3 +3371,36 @@ input, select, textarea {
 	#nav ul li a.active span:before {
 		color: #4fc6d6;
 	}
+
+/* Mobile/tablet: keep the menu toggle off the hero title */
+
+	@media screen and (max-width: 960px) {
+
+		#main > section#top {
+			padding-top: 4.5em;
+		}
+
+	}
+
+/* Theme toggle: override the template's global button styles */
+
+	button.theme-toggle,
+	button.theme-toggle:hover,
+	button.theme-toggle:active {
+		background-color: rgba(255, 255, 255, 0.85);
+		background-image: none;
+	}
+
+		button.theme-toggle .icon {
+			color: #0B1F2A;
+		}
+
+	html[data-theme="dark"] button.theme-toggle,
+	html[data-theme="dark"] button.theme-toggle:hover,
+	html[data-theme="dark"] button.theme-toggle:active {
+		background-color: rgba(30, 40, 46, 0.85);
+	}
+
+		html[data-theme="dark"] button.theme-toggle .icon {
+			color: #f0d78c;
+		}
