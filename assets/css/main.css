@@ -3343,3 +3343,31 @@ input, select, textarea {
 				html[data-theme="dark"] #footer a {
 					color: #4fc6d6;
 				}
+
+	/* Dark theme refinements */
+
+		/* Soften the bright project screenshots, full brightness on hover */
+
+			html[data-theme="dark"] #portfolio .item .image img,
+			html[data-theme="dark"] #top .hero-visual img {
+				filter: brightness(0.85);
+				transition: filter 0.3s ease;
+			}
+
+				html[data-theme="dark"] #portfolio .item .image:hover img,
+				html[data-theme="dark"] #top .hero-visual img:hover {
+					filter: none;
+				}
+
+		/* Keep the sidebar darker than the content, with a subtle edge */
+
+			html[data-theme="dark"] #header {
+				background-color: #0b1013;
+				box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.06);
+			}
+
+/* Active nav icon: brand teal instead of the template pink (both themes) */
+
+	#nav ul li a.active span:before {
+		color: #4fc6d6;
+	}
