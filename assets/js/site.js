@@ -42,7 +42,7 @@
 		'about.p3': 'J’aime construire des pipelines complets et en faire des outils que les gens utilisent vraiment.',
 		'about.github': 'Voir mon GitHub',
 
-		'certs.title': 'Formation et certifications',
+		'certs.title': 'Formation',
 		'certs.degrees': 'Diplômes',
 		'certs.d1': 'Titre RNCP niveau 7 (Bac+5) – Architecte en Intelligence Artificielle (Jedha, 2025)',
 		'certs.d2': 'Titre RNCP niveau 6 (Bac+3/4) – Concepteur-développeur en science des données (Jedha, 2025)',

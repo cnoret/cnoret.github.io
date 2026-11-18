@@ -3540,3 +3540,38 @@ input, select, textarea {
 			position: relative;
 			top: -0.06em;
 		}
+
+/* Buttons: deeper teal so white text meets WCAG AA at every screen size */
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button,
+	#contact .contact-actions .contact-icon {
+		background-color: #007a8a;
+	}
+
+		input[type="button"]:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		button:hover,
+		.button:hover,
+		#contact .contact-actions .contact-icon:hover {
+			background-color: #006b79;
+		}
+
+		input[type="button"]:active,
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		button:active,
+		.button:active,
+		#contact .contact-actions .contact-icon:active {
+			background-color: #005e6a;
+		}
+
+/* "Education" heading: darker teal on small screens in the light theme */
+
+	#about .about-copy .about-certs h3 {
+		color: #00707f;
+	}
