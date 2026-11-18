@@ -3418,3 +3418,19 @@ input, select, textarea {
 	.nowrap {
 		white-space: nowrap;
 	}
+
+/* Hero: single image split into four dashboards */
+
+	#top .hero-visual img.hero-quad {
+		border-radius: 0;
+		box-shadow: none;
+		filter: drop-shadow(0 0.6em 1.1em rgba(11, 31, 42, 0.16)) drop-shadow(0 0.15em 0.3em rgba(11, 31, 42, 0.08));
+	}
+
+	html[data-theme="dark"] #top .hero-visual img.hero-quad {
+		filter: brightness(0.85) drop-shadow(0 0.6em 1.1em rgba(0, 0, 0, 0.5));
+	}
+
+		html[data-theme="dark"] #top .hero-visual img.hero-quad:hover {
+			filter: drop-shadow(0 0.6em 1.1em rgba(0, 0, 0, 0.5));
+		}
