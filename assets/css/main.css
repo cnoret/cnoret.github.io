@@ -3485,3 +3485,32 @@ input, select, textarea {
 	html[data-theme="dark"] #main > section > .container > header h2 {
 		color: #eef3f5;
 	}
+
+/* Language toggle (sits left of the theme toggle) */
+
+	button.lang-toggle {
+		right: 3.65em;
+	}
+
+		button.lang-toggle:hover {
+			transform: none;
+		}
+
+		button.theme-toggle .lang-label {
+			display: block;
+			color: #0B1F2A;
+			font-size: 0.8em;
+			font-weight: 600;
+			letter-spacing: 0.06em;
+			line-height: 3em;
+		}
+
+		html[data-theme="dark"] button.theme-toggle .lang-label {
+			color: #dfe7ea;
+		}
+
+	/* The French hero title is longer: let it wrap instead of overflowing */
+
+		html[lang="fr"] #top .hero-copy h2 {
+			white-space: normal;
+		}

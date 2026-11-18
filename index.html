@@ -9,7 +9,7 @@
 		<title>Christophe Noret | Data Analyst · Analytics Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Christophe Noret, Data Analyst and Analytics Engineer based in Angers / Nantes, France. End-to-end data projects: KPIs, forecasting, dashboards." />
+		<meta name="description" data-i18n-content="meta.description" content="Christophe Noret, Data Analyst and Analytics Engineer based in Angers / Nantes, France. End-to-end data projects: KPIs, forecasting, dashboards." />
 		<!-- Open Graph / social previews -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://cnoret.github.io/" />
@@ -48,14 +48,23 @@
 				if (theme !== 'light' && theme !== 'dark')
 					theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 				document.documentElement.setAttribute('data-theme', theme);
+
+				var lang;
+				try { lang = localStorage.getItem('lang'); } catch (e) {}
+				if (lang !== 'en' && lang !== 'fr') {
+					var langs = navigator.languages || [navigator.language || 'en'];
+					lang = String(langs[0] || 'en').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+				}
+				document.documentElement.setAttribute('lang', lang);
 			})();
 		</script>
-		<link rel="stylesheet" href="assets/css/main.css?v=5" />
+		<link rel="stylesheet" href="assets/css/main.css?v=6" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Theme toggle -->
 			<button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="icon solid fa-moon" aria-hidden="true"></span></button>
+			<button type="button" id="lang-toggle" class="theme-toggle lang-toggle" aria-label="Voir le site en français" title="Voir le site en français"><span class="lang-label" lang="fr">FR</span></button>
 
 		<!-- Header -->
 			<div id="header">
@@ -72,9 +81,9 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home" data-i18n="nav.intro">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user" data-i18n="nav.about">About</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -87,7 +96,7 @@
 						<ul class="icons">
 							<li><a href="https://github.com/cnoret" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
 							<li><a href="https://www.linkedin.com/in/christophenoret" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:hello@christophenoret.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="mailto:hello@christophenoret.com" class="icon solid fa-envelope"><span class="label" data-i18n="social.email">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -103,15 +112,15 @@
 							<div class="row hero-row">
 								<div class="col-12-mobile hero-copy-col">
 									<div class="hero-copy">
-										<h2>Hi, I'm Christophe.</h2>
+										<h2 data-i18n="hero.title">Hi, I'm Christophe.</h2>
 										<p class="hero-role">Data Analyst · Analytics Engineer</p>
-										<p>I build end-to-end data projects, from raw data to KPIs and dashboards. Based in Angers / Nantes, open to remote work.</p>
-										<a href="#portfolio" class="button scrolly">View projects</a>
+										<p data-i18n="hero.text">I build end-to-end data projects, from raw data to KPIs and dashboards. Based in Angers / Nantes, open to remote work.</p>
+										<a href="#portfolio" class="button scrolly" data-i18n="hero.cta">View projects</a>
 									</div>
 								</div>
 								<div class="col-12-mobile hero-visual-col">
 									<div class="hero-visual">
-										<img class="hero-quad" src="images/hero-dashboards.webp" alt="Four project dashboards: retail sales, car rental pricing, French energy consumption and SMS spam detection" width="1600" height="900" />
+										<img class="hero-quad" data-i18n-alt="hero.alt" src="images/hero-dashboards.webp" alt="Four project dashboards: retail sales, car rental pricing, French energy consumption and SMS spam detection" width="1600" height="900" />
 									</div>
 								</div>
 							</div>
@@ -126,16 +135,16 @@
 								<h2>Portfolio</h2>
 							</header>
 
-							<p>Four projects, each taken from data cleaning to a live app you can try.</p>
+							<p data-i18n="portfolio.intro">Four projects, each taken from data cleaning to a live app you can try.</p>
 
 							<div class="row">
 								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="https://retail-data-analysis.streamlit.app/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/projects/retail.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Retail Sales Analysis" /></a>
+										<a href="https://retail-data-analysis.streamlit.app/" class="image fit" target="_blank" rel="noopener noreferrer"><img data-i18n-alt="p1.alt" src="images/projects/retail.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Retail Sales Analysis" /></a>
 										<header>
-											<h3>Retail Sales Analysis</h3>
+											<h3 data-i18n="p1.title">Retail Sales Analysis</h3>
 										</header>
-										<p class="item-desc">Weekly sales analysis of 45 Walmart stores: KPIs, seasonality and sales forecasting (R² 0.96), delivered as an interactive dashboard.</p>
+										<p class="item-desc" data-i18n="p1.desc">Weekly sales analysis of 45 Walmart stores: KPIs, seasonality and sales forecasting (R² 0.96), delivered as an interactive dashboard.</p>
 										<p class="item-tags">
 											<span>Python</span>
 											<span>pandas</span>
@@ -144,17 +153,17 @@
 										</p>
 										<p class="item-links">
 											<a href="https://github.com/cnoret/retail-data-analysis" target="_blank" rel="noopener">GitHub</a>
-											<a href="https://retail-data-analysis.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+											<a href="https://retail-data-analysis.streamlit.app/" target="_blank" rel="noopener noreferrer" data-i18n="link.demo">Demo</a>
 										</p>
 									</article>
 								</div>
 								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="https://cnoret-getaround-dashboard.hf.space/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/projects/getaround.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Car Rental Pricing (Getaround)" /></a>
+										<a href="https://cnoret-getaround-dashboard.hf.space/" class="image fit" target="_blank" rel="noopener noreferrer"><img data-i18n-alt="p2.alt" src="images/projects/getaround.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Car Rental Pricing (Getaround)" /></a>
 										<header>
-											<h3>Car Rental Pricing (Getaround)</h3>
+											<h3 data-i18n="p2.title">Car Rental Pricing (Getaround)</h3>
 										</header>
-										<p class="item-desc">Rental price prediction served through an API and a dashboard, with MLflow tracking, tests and CI. MAE €10.68, R² 0.73.</p>
+										<p class="item-desc" data-i18n="p2.desc">Rental price prediction served through an API and a dashboard, with MLflow tracking, tests and CI. MAE €10.68, R² 0.73.</p>
 										<p class="item-tags">
 											<span>Python</span>
 											<span>scikit-learn</span>
@@ -164,17 +173,17 @@
 										</p>
 										<p class="item-links">
 											<a href="https://github.com/cnoret/getaround-pricing" target="_blank" rel="noopener">GitHub</a>
-											<a href="https://cnoret-getaround-dashboard.hf.space/" target="_blank" rel="noopener noreferrer">Demo</a>
+											<a href="https://cnoret-getaround-dashboard.hf.space/" target="_blank" rel="noopener noreferrer" data-i18n="link.demo">Demo</a>
 										</p>
 									</article>
 								</div>
 								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="https://cnoret-hexa-watts.hf.space/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/projects/hexa-watts.webp" width="1200" height="675" loading="lazy" decoding="async" alt="French Energy Analysis (Hexa Watts)" /></a>
+										<a href="https://cnoret-hexa-watts.hf.space/" class="image fit" target="_blank" rel="noopener noreferrer"><img data-i18n-alt="p3.alt" src="images/projects/hexa-watts.webp" width="1200" height="675" loading="lazy" decoding="async" alt="French Energy Analysis (Hexa Watts)" /></a>
 										<header>
-											<h3>French Energy Analysis (Hexa Watts)</h3>
+											<h3 data-i18n="p3.title">French Energy Analysis (Hexa Watts)</h3>
 										</header>
-										<p class="item-desc">Electricity consumption analysis and forecasting across French regions, based on date, time and temperature, in an interactive app.</p>
+										<p class="item-desc" data-i18n="p3.desc">Electricity consumption analysis and forecasting across French regions, based on date, time and temperature, in an interactive app.</p>
 										<p class="item-tags">
 											<span>Python</span>
 											<span>pandas</span>
@@ -184,17 +193,17 @@
 										</p>
 										<p class="item-links">
 											<a href="https://github.com/cnoret/hexa-watts" target="_blank" rel="noopener">GitHub</a>
-											<a href="https://cnoret-hexa-watts.hf.space/" target="_blank" rel="noopener noreferrer">Demo</a>
+											<a href="https://cnoret-hexa-watts.hf.space/" target="_blank" rel="noopener noreferrer" data-i18n="link.demo">Demo</a>
 										</p>
 									</article>
 								</div>
 								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="https://sms-spam-detector-cnoret.streamlit.app/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/projects/sms-spam.webp" width="1200" height="675" loading="lazy" decoding="async" alt="SMS Spam Detection" /></a>
+										<a href="https://sms-spam-detector-cnoret.streamlit.app/" class="image fit" target="_blank" rel="noopener noreferrer"><img data-i18n-alt="p4.alt" src="images/projects/sms-spam.webp" width="1200" height="675" loading="lazy" decoding="async" alt="SMS Spam Detection" /></a>
 										<header>
-											<h3>SMS Spam Detection</h3>
+											<h3 data-i18n="p4.title">SMS Spam Detection</h3>
 										</header>
-										<p class="item-desc">Neural network classifier that flags spam SMS in real time, trained on an imbalanced dataset. Spam precision 0.87, recall 0.92, accuracy 0.97.</p>
+										<p class="item-desc" data-i18n="p4.desc">Neural network classifier that flags spam SMS in real time, trained on an imbalanced dataset. Spam precision 0.87, recall 0.92, accuracy 0.97.</p>
 										<p class="item-tags">
 											<span>Python</span>
 											<span>TensorFlow</span>
@@ -204,7 +213,7 @@
 										</p>
 										<p class="item-links">
 											<a href="https://github.com/cnoret/sms-spam-detector" target="_blank" rel="noopener">GitHub</a>
-											<a href="https://sms-spam-detector-cnoret.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+											<a href="https://sms-spam-detector-cnoret.streamlit.app/" target="_blank" rel="noopener noreferrer" data-i18n="link.demo">Demo</a>
 										</p>
 									</article>
 								</div>
@@ -218,26 +227,26 @@
 						<div class="container">
 
 							<header>
-								<h2>About Me</h2>
+								<h2 data-i18n="about.title">About Me</h2>
 							</header>
 
 							<div class="row about-layout">
 								<div class="col-7 col-12-mobile about-copy">
-									<p>After 8 years in retail, tracking sales and commercial KPIs, I moved into data.</p>
-									<p>Today I'm a freelance Data Teaching Assistant at Jedha AI School, helping students with SQL, Python and machine learning.</p>
-									<p>I enjoy building complete pipelines and turning them into tools people actually use.</p>
+									<p data-i18n="about.p1">After 8 years in retail, tracking sales and commercial KPIs, I moved into data.</p>
+									<p data-i18n="about.p2">Today I'm a freelance Data Teaching Assistant at Jedha AI School, helping students with SQL, Python and machine learning.</p>
+									<p data-i18n="about.p3">I enjoy building complete pipelines and turning them into tools people actually use.</p>
 									<div class="about-certs">
-										<h3>Education & Certifications</h3>
+										<h3 data-i18n="certs.title">Education & Certifications</h3>
 										<div class="cert-group">
-											<h4>Degrees</h4>
+											<h4 data-i18n="certs.degrees">Degrees</h4>
 											<ul>
-												<li>Master's-level degree (EQF 7, RNCP) – AI Architect (Jedha, 2025)</li>
-												<li>Bachelor's-level degree (EQF 6, RNCP) – Data Science Developer (Jedha, 2025)</li>
-												<li>Data Analyst (DataScientest, co-certified by MINES Paris – PSL, 2023)</li>
+												<li data-i18n="certs.d1">Master's-level degree (EQF 7, RNCP) – AI Architect (Jedha, 2025)</li>
+												<li data-i18n="certs.d2">Bachelor's-level degree (EQF 6, RNCP) – Data Science Developer (Jedha, 2025)</li>
+												<li data-i18n="certs.d3">Data Analyst (DataScientest, co-certified by MINES Paris – PSL, 2023)</li>
 											</ul>
 										</div>
 										<div class="cert-group">
-											<h4>Online certificates</h4>
+											<h4 data-i18n="certs.online">Online certificates</h4>
 											<ul>
 												<li>IBM Data Analyst Professional Certificate (2024)</li>
 												<li>Google AI Essentials (2024)</li>
@@ -245,20 +254,20 @@
 										</div>
 									</div>
 									<footer>
-										<a href="https://github.com/cnoret" class="button" target="_blank" rel="noopener noreferrer">View my GitHub</a>
+										<a href="https://github.com/cnoret" class="button" target="_blank" rel="noopener noreferrer" data-i18n="about.github">View my GitHub</a>
 									</footer>
 								</div>
 								<div class="col-5 col-12-mobile about-facts">
 									<div class="fact-card">
 										<span class="fact-value">8</span>
-										<span class="fact-label">years in retail</span>
+										<span class="fact-label" data-i18n="fact.retail">years in retail</span>
 									</div>
 									<div class="fact-card">
 										<span class="fact-value">15+</span>
-										<span class="fact-label">Jedha cohorts supported</span>
+										<span class="fact-label" data-i18n="fact.cohorts">Jedha cohorts supported</span>
 									</div>
 									<div class="fact-card">
-										<span class="fact-value fact-value-text">Main stack</span>
+										<span class="fact-value fact-value-text" data-i18n="fact.stack">Main stack</span>
 										<span class="fact-label">SQL · Python · Power BI · pandas · <span class="nowrap">scikit-learn</span> · Airflow · Docker · FastAPI · Streamlit</span>
 									</div>
 								</div>
@@ -275,10 +284,10 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p class="contact-lead">Open to Data Analyst and Analytics Engineer roles in Angers / Nantes or remote. Let's talk!</p>
+							<p class="contact-lead" data-i18n="contact.lead">Open to Data Analyst and Analytics Engineer roles in Angers / Nantes or remote. Let's talk!</p>
 
 							<footer class="contact-actions">
-								<a href="mailto:hello@christophenoret.com" class="button">Email me</a>
+								<a href="mailto:hello@christophenoret.com" class="button" data-i18n="contact.email">Email me</a>
 								<a href="https://www.linkedin.com/in/christophenoret" class="contact-icon icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a>
 								<a href="https://github.com/cnoret" class="contact-icon icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a>
 							</footer>
@@ -293,12 +302,13 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; 2026 Christophe Noret. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li data-i18n="footer.rights">&copy; 2026 Christophe Noret. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/site.js?v=1"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -306,31 +316,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				(function() {
-					var root = document.documentElement,
-						button = document.getElementById('theme-toggle'),
-						icon = button.querySelector('.icon');
-
-					function render() {
-						var dark = root.getAttribute('data-theme') === 'dark',
-							label = dark ? 'Switch to light mode' : 'Switch to dark mode';
-						icon.classList.toggle('fa-sun', dark);
-						icon.classList.toggle('fa-moon', !dark);
-						button.setAttribute('aria-label', label);
-						button.setAttribute('title', label);
-					}
-
-					button.addEventListener('click', function() {
-						var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-						root.setAttribute('data-theme', next);
-						try { localStorage.setItem('theme', next); } catch (e) {}
-						render();
-					});
-
-					render();
-				})();
-			</script>
 
 	</body>
 </html>
