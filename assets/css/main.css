@@ -3664,3 +3664,20 @@ input, select, textarea {
 			}
 
 		}
+
+	/* Headline: balanced lines, sized to fit in three lines on laptop screens */
+
+		#top .hero-copy h2,
+		html[lang="fr"] #top .hero-copy h2 {
+			text-wrap: balance;
+			font-size: 2em;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#top .hero-copy h2,
+			html[lang="fr"] #top .hero-copy h2 {
+				font-size: 1.7em;
+			}
+
+		}
