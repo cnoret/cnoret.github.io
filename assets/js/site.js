@@ -25,7 +25,7 @@
 		'link.demo': 'Démo',
 
 		'p1.title': 'Revue de performance de 45 magasins (Walmart)',
-		'p1.desc': 'Un directeur régional doit fixer ses priorités&nbsp;: quels magasins sous-performent, quels rayons soutenir, comment préparer les fêtes&nbsp;? 5&nbsp;recommandations chiffrées, dont 7&nbsp;magasins à auditer pour un potentiel de 139&nbsp;M$ par an.',
+		'p1.desc': 'Un directeur régional doit fixer ses priorités&nbsp;: quels magasins sous-performent, quels rayons soutenir, comment préparer les fêtes&nbsp;? 5&nbsp;recommandations chiffrées, dont 7&nbsp;magasins à auditer pour un potentiel de 139&nbsp;M$ par an. Chaque résultat est recalculé en SQL (DuckDB) et vérifié en CI.',
 		'p1.alt': 'Revue de performance de 45 magasins (Walmart)',
 		'p2.title': 'Tarification de location de voitures (Getaround)',
 		'p2.desc': 'Quel délai imposer entre deux locations&nbsp;? 60&nbsp;minutes éviteraient 77&nbsp;% des conflits de restitution en ne bloquant que 2&nbsp;% des locations. Plus une API de prédiction de prix (MAE 10,68&nbsp;€) livrée avec MLflow, tests et CI.',
