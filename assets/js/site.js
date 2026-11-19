@@ -18,7 +18,7 @@
 		'hero.title': 'Bonjour, je suis Christophe.',
 		'hero.text': 'Pendant 8 ans, j’ai utilisé les données pour décider sur le terrain. Aujourd’hui, je construis toute la chaîne : des pipelines et modèles de données fiables jusqu’aux tableaux de bord qui servent vraiment.',
 		'hero.location': 'Angers / Nantes · télétravail possible',
-		'hero.cta': 'Voir les projets',
+		'hero.cta': 'Me contacter',
 		'hero.alt': 'Quatre tableaux de bord de projets : ventes retail, tarification de location de voitures, consommation électrique en France et détection de spam SMS',
 
 		'portfolio.intro': 'Quatre projets, chacun mené du nettoyage des données jusqu’à une application en ligne que vous pouvez tester.',
