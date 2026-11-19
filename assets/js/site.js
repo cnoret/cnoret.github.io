@@ -9,7 +9,7 @@
 	var root = document.documentElement;
 
 	var FR = {
-		'meta.description': "Christophe Noret · Data Analyst et Analytics Engineer à Angers / Nantes. Projets data de bout en bout : KPI, prévisions, tableaux de bord.",
+		'meta.description': "Christophe Noret · Data Analyst et Analytics Engineer à Angers / Nantes. Projets data de bout en bout&nbsp;: KPI, prévisions, tableaux de bord.",
 
 		'nav.intro': 'Accueil',
 		'nav.about': 'À propos',
@@ -19,27 +19,27 @@
 		'hero.text': 'Pendant 8 ans, j’ai utilisé les données pour décider sur le terrain. Aujourd’hui, je construis toute la chaîne, des pipelines aux tableaux de bord.',
 		'hero.location': 'Angers / Nantes · télétravail possible',
 		'hero.cta': 'Me contacter',
-		'hero.alt': 'Quatre tableaux de bord de projets : ventes retail, tarification de location de voitures, consommation électrique en France et détection de spam SMS',
+		'hero.alt': 'Quatre tableaux de bord de projets&nbsp;: ventes retail, tarification de location de voitures, consommation électrique en France et détection de spam SMS',
 
 		'portfolio.intro': 'Quatre projets, chacun mené du nettoyage des données jusqu’à une application en ligne que vous pouvez tester.',
 		'link.demo': 'Démo',
 
-		'p1.title': 'Analyse des ventes retail',
-		'p1.desc': 'Analyse des ventes hebdomadaires de 45 magasins Walmart : KPI, saisonnalité et prévisions (R² 0,96) dans un tableau de bord interactif.',
-		'p1.alt': 'Analyse des ventes retail',
+		'p1.title': 'Revue de performance de 45 magasins (Walmart)',
+		'p1.desc': 'Un directeur régional doit fixer ses priorités&nbsp;: quels magasins sous-performent, quels rayons soutenir, comment préparer les fêtes&nbsp;? 5&nbsp;recommandations chiffrées, dont 7&nbsp;magasins à auditer pour un potentiel de 139&nbsp;M$ par an.',
+		'p1.alt': 'Revue de performance de 45 magasins (Walmart)',
 		'p2.title': 'Tarification de location de voitures (Getaround)',
-		'p2.desc': 'Prédiction du prix de location exposée via une API et un tableau de bord, avec suivi MLflow, tests et CI. MAE 10,68&nbsp;€ · R² 0,73.',
+		'p2.desc': 'Quel délai imposer entre deux locations&nbsp;? 60&nbsp;minutes éviteraient 77&nbsp;% des conflits de restitution en ne bloquant que 2&nbsp;% des locations. Plus une API de prédiction de prix (MAE 10,68&nbsp;€) livrée avec MLflow, tests et CI.',
 		'p2.alt': 'Tarification de location de voitures (Getaround)',
 		'p3.title': 'Analyse énergétique en France (Hexa Watts)',
-		'p3.desc': 'Projet d’équipe à trois : une application interactive qui analyse et prévoit la consommation électrique des régions françaises selon la date, l’heure et la température.',
+		'p3.desc': 'Projet d’équipe à trois&nbsp;: comment la météo pèse-t-elle sur la consommation électrique des régions&nbsp;? Nous avons croisé 4&nbsp;sources ouvertes (RTE, INSEE, Météo France, Eurostat) dans une application d’analyse et de prévision par région, date et température.',
 		'p3.alt': 'Analyse énergétique en France (Hexa Watts)',
 		'p4.title': 'Détection de spam SMS',
-		'p4.desc': 'Réseau de neurones qui détecte les spams SMS en temps réel, entraîné sur un jeu de données déséquilibré. Spam : précision 0,87 · rappel 0,92 · F1 0,89.',
+		'p4.desc': 'Peut-on filtrer les SMS indésirables en temps réel avec un modèle léger&nbsp;? Oui&nbsp;: un réseau de neurones de 598&nbsp;Ko repère 92&nbsp;% des spams (F1&nbsp;0,89), entraîné sur des données déséquilibrées (13&nbsp;% de spams).',
 		'p4.alt': 'Détection de spam SMS',
 
 		'about.title': 'À propos',
 		'about.p1': 'Après 8 ans en retail à suivre les ventes et les KPI, j’ai choisi la data.',
-		'about.p2': 'Aujourd’hui je suis Teaching Assistant data en freelance chez Jedha AI School : j’accompagne les apprenants en SQL, Python et machine learning.',
+		'about.p2': 'Aujourd’hui je suis Teaching Assistant data en freelance chez Jedha AI School&nbsp;: j’accompagne les apprenants en SQL, Python et machine learning.',
 		'about.p3': 'J’aime construire des pipelines complets et en faire des outils que les gens utilisent vraiment.',
 		'about.github': 'Voir mon GitHub',
 
