@@ -30,10 +30,10 @@
 		'p2.desc': 'Prédiction du prix de location exposée via une API et un tableau de bord, avec suivi MLflow, tests et CI. MAE 10,68&nbsp;€ · R² 0,73.',
 		'p2.alt': 'Tarification de location de voitures (Getaround)',
 		'p3.title': 'Analyse énergétique en France (Hexa Watts)',
-		'p3.desc': 'Application interactive qui analyse et prévoit la consommation électrique des régions françaises selon la date, l’heure et la température.',
+		'p3.desc': 'Projet d’équipe à trois : une application interactive qui analyse et prévoit la consommation électrique des régions françaises selon la date, l’heure et la température.',
 		'p3.alt': 'Analyse énergétique en France (Hexa Watts)',
 		'p4.title': 'Détection de spam SMS',
-		'p4.desc': 'Réseau de neurones qui détecte les spams SMS en temps réel, entraîné sur un jeu de données déséquilibré. Spam : précision 0,87 · rappel 0,92 · accuracy 0,97.',
+		'p4.desc': 'Réseau de neurones qui détecte les spams SMS en temps réel, entraîné sur un jeu de données déséquilibré. Spam : précision 0,87 · rappel 0,92 · F1 0,89.',
 		'p4.alt': 'Détection de spam SMS',
 
 		'about.title': 'À propos',
