@@ -31,7 +31,7 @@
 		'p2.desc': 'Quel délai imposer entre deux locations&nbsp;? 60&nbsp;minutes éviteraient 77&nbsp;% des conflits de restitution en ne bloquant que 2&nbsp;% des locations. Plus une API de prédiction de prix (MAE 10,68&nbsp;€) livrée avec MLflow, tests et CI.',
 		'p2.alt': 'Tarification de location de voitures (Getaround)',
 		'p3.title': 'Analyse énergétique en France (Hexa Watts)',
-		'p3.desc': 'Projet d’équipe à trois&nbsp;: comment la météo pèse-t-elle sur la consommation électrique des régions&nbsp;? Nous avons croisé 4&nbsp;sources ouvertes (RTE, INSEE, Météo France, Eurostat) dans une application d’analyse et de prévision par région, date et température.',
+		'p3.desc': 'Projet d’équipe à trois, repris ensuite en solo&nbsp;: comment la météo pèse-t-elle sur la consommation électrique des régions&nbsp;? 4&nbsp;sources ouvertes croisées (RTE, INSEE, Météo France, Eurostat) et un modèle qui prévoit la demande à 5,5&nbsp;% près sur 12&nbsp;mois jamais vus, contre 7,3&nbsp;% pour une référence naïve.',
 		'p3.alt': 'Analyse énergétique en France (Hexa Watts)',
 		'p4.title': 'Détection de spam SMS',
 		'p4.desc': 'Peut-on filtrer les SMS indésirables en temps réel avec un modèle léger&nbsp;? Oui&nbsp;: un réseau de neurones de 598&nbsp;Ko repère 92&nbsp;% des spams (F1&nbsp;0,89), entraîné sur des données déséquilibrées (13&nbsp;% de spams).',
