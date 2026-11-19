@@ -16,7 +16,8 @@
 		'social.email': 'E-mail',
 
 		'hero.title': 'Bonjour, je suis Christophe.',
-		'hero.text': 'Je conçois des projets data de bout en bout : de la donnée brute jusqu’aux KPI et aux tableaux de bord. Angers / Nantes, télétravail possible.',
+		'hero.text': 'Pendant 8 ans, j’ai utilisé les données pour décider sur le terrain. Aujourd’hui, je construis toute la chaîne : des pipelines et modèles de données fiables jusqu’aux tableaux de bord qui servent vraiment.',
+		'hero.location': 'Angers / Nantes · télétravail possible',
 		'hero.cta': 'Voir les projets',
 		'hero.alt': 'Quatre tableaux de bord de projets : ventes retail, tarification de location de voitures, consommation électrique en France et détection de spam SMS',
 

@@ -3575,3 +3575,40 @@ input, select, textarea {
 	#about .about-copy .about-certs h3 {
 		color: #00707f;
 	}
+
+/* Hero: location on its own line, lighter hero copy on small screens */
+
+	#top .hero-copy p.hero-meta {
+		color: #4a5357;
+		font-size: 0.9em;
+		font-weight: 400;
+		line-height: 1.5em;
+		margin: -0.75em 0 1.5em 0;
+	}
+
+		#top .hero-copy p.hero-meta .icon {
+			color: #00707f;
+			margin-right: 0.25em;
+		}
+
+	html[data-theme="dark"] #top .hero-copy p.hero-meta {
+		color: #a9b4b8;
+	}
+
+		html[data-theme="dark"] #top .hero-copy p.hero-meta .icon {
+			color: #4fc6d6;
+		}
+
+	@media screen and (max-width: 736px) {
+
+		#top .hero-copy p,
+		#top .hero-copy .hero-role + p {
+			font-size: 1em;
+			line-height: 1.6em;
+		}
+
+		#top .hero-copy p.hero-meta {
+			font-size: 0.85em;
+		}
+
+	}
