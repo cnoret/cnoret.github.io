@@ -9,7 +9,7 @@
 	var root = document.documentElement;
 
 	var FR = {
-		'meta.description': "Christophe Noret · Data Analyst et Analytics Engineer à Angers / Nantes. Projets data de bout en bout&nbsp;: KPI, prévisions, tableaux de bord.",
+		'meta.description': "Christophe Noret · Data Analyst et Analytics Engineer à Angers / Nantes. Projets data de bout en bout\u00a0: KPI, prévisions, tableaux de bord.",
 
 		'nav.intro': 'Accueil',
 		'nav.about': 'À propos',
@@ -19,7 +19,7 @@
 		'hero.text': 'Pendant 8 ans, j’ai utilisé les données pour décider sur le terrain. Aujourd’hui, je construis toute la chaîne, des pipelines aux tableaux de bord.',
 		'hero.location': 'Angers / Nantes · télétravail possible',
 		'hero.cta': 'Me contacter',
-		'hero.alt': 'Quatre tableaux de bord de projets&nbsp;: ventes retail, tarification de location de voitures, consommation électrique en France et détection de spam SMS',
+		'hero.alt': 'Quatre tableaux de bord de projets\u00a0: ventes retail, tarification de location de voitures, consommation électrique en France et détection de spam SMS',
 
 		'portfolio.intro': 'Quatre projets, chacun mené du nettoyage des données jusqu’à une application en ligne que vous pouvez tester.',
 		'link.demo': 'Démo',
