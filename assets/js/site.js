@@ -27,9 +27,9 @@
 		'p1.title': 'Revue de performance de 45 magasins (Walmart)',
 		'p1.desc': 'Un directeur régional doit fixer ses priorités&nbsp;: quels magasins sous-performent, quels rayons soutenir, comment préparer les fêtes&nbsp;? 5&nbsp;recommandations chiffrées, dont 7&nbsp;magasins à auditer pour un potentiel de 139&nbsp;M$ par an. Chaque résultat est recalculé en SQL (DuckDB) et vérifié en CI.',
 		'p1.alt': 'Revue de performance de 45 magasins (Walmart)',
-		'p2.title': 'Tarification de location de voitures (Getaround)',
+		'p2.title': 'Délais et tarification de location (Getaround)',
 		'p2.desc': 'Quel délai imposer entre deux locations&nbsp;? 60&nbsp;minutes éviteraient 77&nbsp;% des conflits de restitution en ne bloquant que 2&nbsp;% des locations. Plus une API de prédiction de prix (MAE 10,68&nbsp;€) livrée avec MLflow, tests et CI.',
-		'p2.alt': 'Tarification de location de voitures (Getaround)',
+		'p2.alt': 'Délais et tarification de location (Getaround)',
 		'p3.title': 'Analyse énergétique en France (Hexa Watts)',
 		'p3.desc': 'Projet d’équipe à trois, repris ensuite en solo&nbsp;: comment la météo pèse-t-elle sur la consommation électrique des régions&nbsp;? 4&nbsp;sources ouvertes croisées (RTE, INSEE, Météo France, Eurostat) et un modèle qui prévoit la demande à 5,5&nbsp;% près sur 12&nbsp;mois jamais vus, contre 7,3&nbsp;% pour une référence naïve.',
 		'p3.alt': 'Analyse énergétique en France (Hexa Watts)',
@@ -57,6 +57,7 @@
 		'contact.lead': 'Je recherche un poste de Data Analyst ou d’Analytics Engineer à Angers / Nantes ou en télétravail. Parlons-en&nbsp;!',
 		'contact.email': 'M’écrire',
 
+		'footer.design': 'Design&nbsp;: <a href="https://html5up.net">HTML5 UP</a>',
 		'footer.rights': '&copy; 2026 Christophe Noret. Tous droits réservés.'
 	};
 
