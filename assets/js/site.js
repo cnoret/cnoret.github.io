@@ -62,8 +62,8 @@
 	};
 
 	var UI = {
-		en: { dark: 'Switch to dark mode', light: 'Switch to light mode', langButton: 'FR', langButtonLang: 'fr', langLabel: 'Voir le site en français' },
-		fr: { dark: 'Passer en mode sombre', light: 'Passer en mode clair', langButton: 'EN', langButtonLang: 'en', langLabel: 'View the site in English' }
+		en: { dark: 'Switch to dark mode', light: 'Switch to light mode', langButton: 'FR', langButtonLang: 'fr', langLabel: 'FR – Voir le site en français' },
+		fr: { dark: 'Passer en mode sombre', light: 'Passer en mode clair', langButton: 'EN', langButtonLang: 'en', langLabel: 'EN – View the site in English' }
 	};
 
 	// Remember the English text written in the page.
@@ -77,6 +77,7 @@
 		each('data-i18n', function(el, key) { EN[key] = el.innerHTML; });
 		each('data-i18n-alt', function(el, key) { EN[key] = el.getAttribute('alt'); });
 		each('data-i18n-content', function(el, key) { EN[key] = el.getAttribute('content'); });
+		each('data-i18n-aria', function(el, key) { EN[key] = el.getAttribute('aria-label'); });
 
 	function currentLang() {
 		return root.getAttribute('lang') === 'fr' ? 'fr' : 'en';
@@ -118,6 +119,7 @@
 			each('data-i18n', function(el, key) { el.innerHTML = text(lang, key); });
 			each('data-i18n-alt', function(el, key) { el.setAttribute('alt', text(lang, key)); });
 			each('data-i18n-content', function(el, key) { el.setAttribute('content', text(lang, key)); });
+			each('data-i18n-aria', function(el, key) { el.setAttribute('aria-label', text(lang, key)); });
 
 			langLabel.textContent = ui.langButton;
 			langLabel.setAttribute('lang', ui.langButtonLang);
